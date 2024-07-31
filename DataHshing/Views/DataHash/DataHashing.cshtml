@@ -1,0 +1,6 @@
+﻿@model PasswordHash
+
+<div>
+    <label asp-for="Password">After Hashing :</label>
+    <span class="text-danger " asp-validation-for="Password">@Model.Password</span>
+</div>

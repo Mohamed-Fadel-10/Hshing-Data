@@ -1,0 +1,15 @@
+﻿@model PasswordHash
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="DataHashing" asp-controller="DataHash" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+        <span class="text-danger " asp-validation-for="Password"></span>
+        <input type="submit" name="submit" value="GetHash" />
+    </div>
+
+</form>
